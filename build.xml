@@ -1,0 +1,164 @@
+<project name="ZED's Redistricting Project" default="compile" basedir="./">
+    <description>
+        ZED's Redistricting Project
+    </description>
+
+    <!-- set global properties for this build -->
+    <property name="src" location="./src"/>
+    <property name="out" location="./out"/>
+    <property name="lib" location="./lib"/>
+    <property name="doc" location="./docs"/>
+    <property name="reports" location="${doc}/reports"/>
+    <!-- identify main class -->
+    <property name="mainclass" value="HangmanConsole"/>
+
+    <path id="classPath">
+        <fileset dir="${lib}" includes="**/*.jar"/>
+        <pathelement location="${out}"/>
+    </path>
+
+    <path id="testpath">
+        <fileset dir="${src}" includes="**/*.class"/>
+        <fileset dir="${lib}" includes="*.jar"/>
+        <pathelement location="${lib}"/>
+    </path>
+
+
+    <target name="all" depends="clean, init, compile, run"/>
+
+    <target name="init">
+        <!-- Create the time stamp -->
+        <tstamp/>
+        <!-- Create the build directory structure used by compile -->
+        <mkdir dir="${out}"/>
+        <!-- Ensure the ${lib} directory exists -->
+        <mkdir dir="${lib}"/>
+    </target>
+
+
+
+    <target name="compile" depends="init"
+            description="compile the source" >
+        <!-- Compile the java code from ${src} into ${out} -->
+        <javac destdir="${out}" classpathref="classPath"
+               debug="on" includeantruntime="false" encoding="cp1252"
+               memoryinitialsize="1024m" memorymaximumsize="1024m" fork="yes">
+            <compilerarg value="-Xlint"/>
+            <src path="${src}"/>
+        </javac>
+        <copy todir="${out}">
+            <fileset dir="${src}" includes = "**/*.txt"/>
+            <fileset dir="${src}" includes = "**/*.png"/>
+        </copy>
+    </target>
+
+    <target name="run" depends="compile"
+            description="run driver" >
+        <java classname="${mainclass}" fork="yes" dir="${out}">
+            <classpath>
+                <path refid="classPath"/>
+                <path location="${out}"/>
+            </classpath>
+        </java>
+    </target>
+
+    <target name="test" depends="compile"
+            description="run junit tests" >
+        <!-- Create the test results directory structure -->
+        <mkdir dir="${reports}"/>
+        <!-- Execute JUnit tests and save in ${reports} -->
+        <junit printsummary="withOutAndErr" haltonfailure="no" showoutput="true" dir="${out}">
+            <classpath>
+                <path refid="classPath"/>
+            </classpath>
+            <formatter type="xml"/>
+            <formatter type="plain" usefile="false" />
+            <formatter type="plain"/>
+            <batchtest fork="yes" todir="${reports}">
+                <fileset dir="${src}" includes="**/*Test*.java"/>
+            </batchtest>
+        </junit>
+    </target>
+
+
+    <target name="report" depends="test"
+            description="format junit test results" >
+        <junitreport todir="${reports}">
+            <fileset dir="${reports}" includes="TEST-*.xml"/>
+            <report todir="${reports}"/>
+        </junitreport>
+        <echo/>
+        <echo>Report root: ${reports}/index.html</echo>
+    </target>
+
+
+
+    <!--<target name="dist" depends="compile"-->
+            <!--description="generate the distribution" >-->
+        <!--&lt;!&ndash; Create the distribution directory &ndash;&gt;-->
+        <!--<mkdir dir="${dist}"/>-->
+        <!--&lt;!&ndash; Put everything in ${build} into the ${ant.project.name}-${DSTAMP}.jar file &ndash;&gt;-->
+        <!--<jar jarfile="${dist}/${ant.project.name}-${DSTAMP}.jar" basedir="${build}"/>-->
+    <!--</target>-->
+
+    <target name="doc" depends="init, clean"
+            description="generate the usage documentation" >
+        <!-- Create the documentation directory -->
+        <mkdir dir="${doc}"/>
+        <!-- Generate the API documentation for ${src} in ${doc} -->
+        <javadoc access="public" destdir="${doc}" classpathref="classPath" encoding="cp1252" additionalparam="-Xdoclint:none">
+            <fileset dir="${src}" casesensitive="yes" defaultexcludes="yes">
+                <filename name="**/*.java"/>
+                <exclude name="**/*Test.java"/>
+            </fileset>
+            <link href="http://download.oracle.com/javase/8/docs/api/" />
+        </javadoc>
+    </target>
+
+    <target name="doc-private" depends="init, clean"
+            description="generate the maintenance documentation" >
+        <!-- Create the documentation directory -->
+        <mkdir dir="${doc}"/>
+        <!-- Generate the API documentation for ${src} in ${doc} -->
+        <javadoc access="private" destdir="${doc}" classpathref="classPath" encoding="cp1252" additionalparam="-Xdoclint:none">
+            <fileset dir="${src}" casesensitive="yes" defaultexcludes="yes">
+                <filename name="**/*.java"/>
+            </fileset>
+            <link href="http://download.oracle.com/javase/8/docs/api/" />
+        </javadoc>
+    </target>
+
+
+
+    <target name="env" description="display build parameters">
+        <echo>
+            build.xml ${version}
+
+            Global settings:
+            java.home = ${java.home}
+            user.home = ${user.home}
+            java.class.path = ${java.class.path}
+
+            Target settings:
+            Classes:       ${build}
+            Distribution:  ${dist}
+            API Docs:      ${doc}
+            Style Check:   ${stylecheck}
+            Test Reports:  ${reports}
+            Test Coverage: ${coverage.html.dir}
+        </echo>
+    </target>
+
+
+    <target name="clean"
+            description="clean up build files"
+            depends="">
+        <!-- Delete the ${build} ${dist} ${doc} ${test} ${reports} and ${stylecheck} directory trees -->
+        <delete dir="${out}"/>
+        <!--<delete dir="${doc}"/>-->
+        <delete dir="${reports}"/>
+        <!-- Delete the serialization test files -->
+        <delete dir="${doc}"/>
+    </target>
+
+</project>

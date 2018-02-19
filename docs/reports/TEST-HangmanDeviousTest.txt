@@ -1,0 +1,15 @@
+Testsuite: HangmanTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.216 sec
+
+Testcase: singleWordDictionaryReturnsCorrectGoalWord took 0.063 sec
+Testcase: guessingALetterWhenNoGoalWordThrowsError took 0 sec
+	SKIPPED: Not possible to test due to constructor throwing an error when no goal words of specified length
+Testcase: testThatDeviousAlgorithmResultsMatchAssignmentExample took 0.014 sec
+Testcase: hangmanConstructorThrowsErrorWhenAnArgumentIsOutOfRange took 0.002 sec
+Testcase: guessingTheSameLetterTwiceThrowsError took 0.003 sec
+Testcase: whenNoLettersHaveBeenGuessedReturnPatternIsStringOfDashes took 0.048 sec
+Testcase: wordListContainsWordsOfCorrectSize took 0.003 sec
+Testcase: guessingALetterWhenNoGuessesRemainThrowsError took 0.001 sec
+Testcase: wordListReturnsSizeOfZeroWhenNoWordsMatchGivenLength took 0 sec
+	SKIPPED: Not possible to test due to constructor throwing error when no goal word of specified size exists
+Testcase: deviousPatternsForShortDictionaryMatchExpected took 0.002 sec

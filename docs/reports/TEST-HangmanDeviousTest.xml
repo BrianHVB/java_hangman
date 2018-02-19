@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="DESKTOP-8R4A9FK" name="HangmanTest" skipped="2" tests="10" time="0.216" timestamp="2017-04-30T11:14:55">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="lib" value="D:\Users\Brian\Google Drive\Projects\Java\Hangman\lib" />
+    <property name="os.name" value="Windows 10" />
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_121\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_121\jre\classes" />
+    <property name="TODAY" value="April 30 2017" />
+    <property name="sun.desktop" value="windows" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.home" value="D:\Users\Brian\Google Drive\`Apps\Apache Ant" />
+    <property name="java.runtime.version" value="1.8.0_121-b13" />
+    <property name="user.name" value="Brian" />
+    <property name="reports" value="D:\Users\Brian\Google Drive\Projects\Java\Hangman\docs\reports" />
+    <property name="user.language" value="en" />
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_121\jre\bin" />
+    <property name="ant.project.default-target" value="compile" />
+    <property name="ant.project.name" value="ZED&apos;s Redistricting Project" />
+    <property name="DSTAMP" value="20170430" />
+    <property name="java.version" value="1.8.0_121" />
+    <property name="user.timezone" value="" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_121\jre\lib\endorsed" />
+    <property name="doc" value="D:\Users\Brian\Google Drive\Projects\Java\Hangman\docs" />
+    <property name="sun.cpu.isalist" value="amd64" />
+    <property name="sun.jnu.encoding" value="Cp1252" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="file.separator" value="\" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.class.version" value="52.0" />
+    <property name="src" value="D:\Users\Brian\Google Drive\Projects\Java\Hangman\src" />
+    <property name="user.country" value="US" />
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_121\jre" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="ant.file" value="D:\Users\Brian\Google Drive\Projects\Java\Hangman\build.xml" />
+    <property name="os.version" value="10.0" />
+    <property name="path.separator" value=";" />
+    <property name="java.vm.version" value="25.121-b13" />
+    <property name="ant.file.type.ZED&apos;s Redistricting Project" value="file" />
+    <property name="user.variant" value="" />
+    <property name="ant.library.dir" value="D:\Users\Brian\Google Drive\`Apps\Apache Ant\lib" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="sun.stdout.encoding" value="cp437" />
+    <property name="user.script" value="" />
+    <property name="user.home" value="C:\Users\Brian" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_121\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Windows\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files (x86)\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\TortoiseSVN\bin;D:\Users\Brian\Google Drive\`Apps\Apache Ant\bin;C:\Program Files\Anaconda3;C:\Program Files\Anaconda3\Scripts;C:\Program Files\Anaconda3\Library\bin;D:\Users\Brian\Google Drive\`Apps\Notepad++;C:\Program Files\Java\jdk1.8.0_121\bin;C:\Program Files (x86)\Bitvise SSH Client;C:\Program Files (x86)\Common Files\Acronis\VirtualFile\;C:\Program Files (x86)\Common Files\Acronis\VirtualFile64\;C:\Program Files (x86)\Common Files\Acronis\SnapAPI\;C:\Program Files (x86)\Python\Python36-32\Scripts\;C:\Program Files (x86)\Python\Python36-32\;C:\Users\Brian\AppData\Local\Microsoft\WindowsApps;C:\Users\Brian\AppData\Roaming\npm;C:\Program Files\TortoiseSVN\bin\svn.exe;." />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="ant.file.ZED&apos;s Redistricting Project" value="D:\Users\Brian\Google Drive\Projects\Java\Hangman\build.xml" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner HangmanTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,D:\Users\Brian\Google Drive\Projects\Java\Hangman\docs\reports\TEST-HangmanTest.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter,D:\Users\Brian\Google Drive\Projects\Java\Hangman\docs\reports\TEST-HangmanTest.txt crashfile=D:\Users\Brian\Google Drive\Projects\Java\Hangman\junitvmwatcher5902503841745136353.properties propsfile=D:\Users\Brian\Google Drive\Projects\Java\Hangman\junit1649591283656617922.properties" />
+    <property name="java.class.path" value="D:\Users\Brian\Google Drive\Projects\Java\Hangman\lib\hamcrest-all-1.3.jar;D:\Users\Brian\Google Drive\Projects\Java\Hangman\lib\hamcrest-core-1.3.jar;D:\Users\Brian\Google Drive\Projects\Java\Hangman\lib\junit-4.12.jar;D:\Users\Brian\Google Drive\Projects\Java\Hangman\out;D:\Users\Brian\Google Drive\`Apps\Apache Ant\lib\ant-launcher.jar;D:\Users\Brian\Google Drive\`Apps\Apache Ant\lib\ant.jar;D:\Users\Brian\Google Drive\`Apps\Apache Ant\lib\ant-junit.jar;D:\Users\Brian\Google Drive\`Apps\Apache Ant\lib\ant-junit4.jar" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.10.0 compiled on December 27 2016" />
+    <property name="TSTAMP" value="0514" />
+    <property name="mainclass" value="HangmanConsole" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.vm.specification.version" value="1.8" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="" />
+    <property name="java.io.tmpdir" value="C:\Users\Brian\AppData\Local\Temp\" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="os.arch" value="amd64" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext;C:\Windows\Sun\Java\lib\ext" />
+    <property name="user.dir" value="D:\Users\Brian\Google Drive\Projects\Java\Hangman\out" />
+    <property name="line.separator" value="&#xd;&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="basedir" value="D:\Users\Brian\Google Drive\Projects\Java\Hangman" />
+    <property name="ant.java.version" value="1.8" />
+    <property name="ant.core.lib" value="D:\Users\Brian\Google Drive\`Apps\Apache Ant\lib\ant.jar" />
+    <property name="file.encoding" value="Cp1252" />
+    <property name="out" value="D:\Users\Brian\Google Drive\Projects\Java\Hangman\out" />
+    <property name="sun.stderr.encoding" value="cp437" />
+    <property name="java.specification.version" value="1.8" />
+    <property name="ant.project.invoked-targets" value="test" />
+  </properties>
+  <testcase classname="HangmanTest" name="singleWordDictionaryReturnsCorrectGoalWord" time="0.06" />
+  <testcase classname="HangmanTest" name="guessingALetterWhenNoGoalWordThrowsError" time="0.0">
+    <skipped message="Not possible to test due to constructor throwing an error when no goal words of specified length" />
+  </testcase>
+  <testcase classname="HangmanTest" name="testThatDeviousAlgorithmResultsMatchAssignmentExample" time="0.014" />
+  <testcase classname="HangmanTest" name="hangmanConstructorThrowsErrorWhenAnArgumentIsOutOfRange" time="0.002" />
+  <testcase classname="HangmanTest" name="guessingTheSameLetterTwiceThrowsError" time="0.003" />
+  <testcase classname="HangmanTest" name="whenNoLettersHaveBeenGuessedReturnPatternIsStringOfDashes" time="0.048" />
+  <testcase classname="HangmanTest" name="wordListContainsWordsOfCorrectSize" time="0.003" />
+  <testcase classname="HangmanTest" name="guessingALetterWhenNoGuessesRemainThrowsError" time="0.001" />
+  <testcase classname="HangmanTest" name="wordListReturnsSizeOfZeroWhenNoWordsMatchGivenLength" time="0.0">
+    <skipped message="Not possible to test due to constructor throwing error when no goal word of specified size exists" />
+  </testcase>
+  <testcase classname="HangmanTest" name="deviousPatternsForShortDictionaryMatchExpected" time="0.002" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
